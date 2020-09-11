@@ -11,12 +11,12 @@ int main()
 	float TTC;
 	
 	cout<<"entrez le prix ht"<<endl;
-	cin<< HT ;
+	cin>> HT ;
 	cout<<"entrez le nb d'article"<<endl;
-	cin<< nbarticle;
+	cin>> nbarticle;
 	cout<<"entrez le taux de TVA"<<endl;
-	cin<< TVA ;
-	TTC=HT/(100/(100*TVA));
+	cin>> TVA ;
+	TTC=HT+HT*(TVA/100);
 	cout<< "le prix TTC pour un article de "<< TTC << "et le prix total TTC correspondant est de "<< TTC*nbarticle<< endl;
 	
 	return 0;
